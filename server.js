@@ -12,8 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
-sequelize.sync({ force: true }).then(() => {
-  console.log(`Example app listening at http://localhost:${PORT}`)
+sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Example app listening at http://localhost:${PORT}`);
+  });
 });
 
 // Above, I call sequalize.sync to sync the data base connection.
