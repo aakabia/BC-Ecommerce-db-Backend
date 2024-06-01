@@ -13,3 +13,6 @@ const sequelize = process.env.DB_URL
     });
 
 module.exports = sequelize;
+
+
+//I created my .env and created the DB_USER,NAME and PASSWORD in there 

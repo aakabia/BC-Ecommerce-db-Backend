@@ -15,3 +15,5 @@ app.use(routes);
 sequelize.sync({ force: true }).then(() => {
   console.log(`Example app listening at http://localhost:${PORT}`)
 });
+
+// Above, I call sequalize.sync to sync the data base connection.
