@@ -45,8 +45,8 @@ Product.belongsToMany(Tag, {
 
 
 
-// Tags belongToMany Products (through ProductTag)
 
+// Tags belongToMany Products (through ProductTag)
 
 
 
